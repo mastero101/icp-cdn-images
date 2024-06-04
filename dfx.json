@@ -9,7 +9,7 @@
         "icp_hello_world_motoko_backend"
       ],
       "frontend": {
-        "entrypoint": "src/icp_hello_world_motoko_frontend/src/index.html"
+        "entrypoint": "src/icp_hello_world_motoko_frontend/motoko-front/dist/browser/index.html"
       },
       "source": [
         "src/icp_hello_world_motoko_frontend/assets",
@@ -25,5 +25,9 @@
     }
   },
   "output_env_file": ".env",
-  "version": 1
+  "version": 1,
+  "include": [
+    "node_modules/",
+    ".node-motoko/base/master/"
+  ]
 }

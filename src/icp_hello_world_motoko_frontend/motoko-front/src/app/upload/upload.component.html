@@ -1,0 +1,7 @@
+<div>
+  <input type="file" (change)="uploadImage($event)" />
+</div>
+<div>
+  <input type="number" #imageId />
+  <button (click)="getImage(imageId.value)">Get Image</button>
+</div>
